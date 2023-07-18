@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewSpaceCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7f-f3-pr3">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-ll-tHO">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="JBJ-ll-tHO" firstAttribute="top" secondItem="I7f-f3-pr3" secondAttribute="top" id="4JN-cI-dJx"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBJ-ll-tHO" secondAttribute="bottom" id="Adb-C8-pAp"/>
+                                    <constraint firstAttribute="trailing" secondItem="JBJ-ll-tHO" secondAttribute="trailing" id="ORw-pl-C9K"/>
+                                    <constraint firstItem="JBJ-ll-tHO" firstAttribute="leading" secondItem="I7f-f3-pr3" secondAttribute="leading" id="iAM-Hr-cOS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I7f-f3-pr3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D27-hx-2dB"/>
+                            <constraint firstItem="I7f-f3-pr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hYe-PA-ibq"/>
+                            <constraint firstItem="I7f-f3-pr3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jvj-qs-Nc1"/>
+                            <constraint firstAttribute="trailing" secondItem="I7f-f3-pr3" secondAttribute="trailing" id="v8C-B8-TOH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblData" destination="JBJ-ll-tHO" id="fn6-F8-B5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6.1538461538461533" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
